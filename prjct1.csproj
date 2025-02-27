@@ -1,0 +1,442 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F6F1DD5-BBC7-4E70-B254-4B3D65B28F40}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>prjct1</RootNamespace>
+    <AssemblyName>prjct1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdCategory.aspx" />
+    <Content Include="AdminHome.aspx" />
+    <Content Include="AdminReg.aspx" />
+    <Content Include="AdProduct.aspx" />
+    <Content Include="Connected Services\BalanceReference1\prjct1.BalanceReference1.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\BalanceReference1\Service.disco" />
+    <None Include="Connected Services\BalanceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\BalanceReference1\configuration.svcinfo" />
+    <None Include="Connected Services\BalanceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="contact.php" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\bootstrap-grid.css" />
+    <Content Include="css\bootstrap-grid.min.css" />
+    <Content Include="css\bootstrap-reboot.css" />
+    <Content Include="css\bootstrap-reboot.min.css" />
+    <Content Include="css\bootstrap-select.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\colors1.css" />
+    <Content Include="css\colors1_dark.css" />
+    <Content Include="css\colors2.css" />
+    <Content Include="css\colors3.css" />
+    <Content Include="css\colors_landing_page.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\dark_layout.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\hizoom.css" />
+    <Content Include="css\owl.carousel.css" />
+    <Content Include="css\owl.carousel.min.css" />
+    <Content Include="css\owl.theme.default.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Feedback.aspx" />
+    <Content Include="FeedbackandReply.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="images\fevicon\fevicon.png" />
+    <Content Include="images\gradian_black.png" />
+    <Content Include="images\gradian_blue.png" />
+    <Content Include="images\it_service\1.jpg" />
+    <Content Include="images\it_service\2.jpg" />
+    <Content Include="images\it_service\22.jpg" />
+    <Content Include="images\it_service\3.jpg" />
+    <Content Include="images\it_service\4.jpg" />
+    <Content Include="images\it_service\404_error_img.png" />
+    <Content Include="images\it_service\5.jpg" />
+    <Content Include="images\it_service\6.jpg" />
+    <Content Include="images\it_service\7.jpg" />
+    <Content Include="images\it_service\8.jpg" />
+    <Content Include="images\it_service\accepted.png" />
+    <Content Include="images\it_service\brand_icon1.png" />
+    <Content Include="images\it_service\brand_icon2.png" />
+    <Content Include="images\it_service\brand_icon3.png" />
+    <Content Include="images\it_service\brand_icon4.png" />
+    <Content Include="images\it_service\brand_icon5.png" />
+    <Content Include="images\it_service\client1.jpg" />
+    <Content Include="images\it_service\client1.png" />
+    <Content Include="images\it_service\client2.jpg" />
+    <Content Include="images\it_service\client2.png" />
+    <Content Include="images\it_service\client3.jpg" />
+    <Content Include="images\it_service\client3.png" />
+    <Content Include="images\it_service\dark_bg_img.png" />
+    <Content Include="images\it_service\dark_bg_img2.png" />
+    <Content Include="images\it_service\home_01.png" />
+    <Content Include="images\it_service\i1.png" />
+    <Content Include="images\it_service\i2.png" />
+    <Content Include="images\it_service\i3.png" />
+    <Content Include="images\it_service\i4.png" />
+    <Content Include="images\it_service\inner_page_banner.jpg" />
+    <Content Include="images\it_service\location_icon_map_cont.png" />
+    <Content Include="images\it_service\phone_icon.png" />
+    <Content Include="images\it_service\post-01.jpg" />
+    <Content Include="images\it_service\post-02.jpg" />
+    <Content Include="images\it_service\post-03.jpg" />
+    <Content Include="images\it_service\post-04.jpg" />
+    <Content Include="images\it_service\post-05.jpg" />
+    <Content Include="images\it_service\post-06.jpg" />
+    <Content Include="images\it_service\post-07.jpg" />
+    <Content Include="images\it_service\post-08.jpg" />
+    <Content Include="images\it_service\si1.png" />
+    <Content Include="images\it_service\si2.png" />
+    <Content Include="images\it_service\si3.png" />
+    <Content Include="images\it_service\si4.png" />
+    <Content Include="images\it_service\si5.png" />
+    <Content Include="images\it_service\si6.png" />
+    <Content Include="images\it_service\slide1.jpg" />
+    <Content Include="images\it_service\slide2.jpg" />
+    <Content Include="images\it_service\slide3.jpg" />
+    <Content Include="images\it_service\team-member-1.jpg" />
+    <Content Include="images\it_service\team-member-2.jpg" />
+    <Content Include="images\it_service\team-member-3.jpg" />
+    <Content Include="images\it_service\test_bg.png" />
+    <Content Include="images\loaders\loader_1.png" />
+    <Content Include="images\logos\it_logo.png" />
+    <Content Include="images\logos\it_logo_white.png" />
+    <Content Include="images\wp12706306-office-laptop-wallpapers.jpg" />
+    <Content Include="images\wp5306483-office-desktop-hd-wallpapers.jpg" />
+    <Content Include="index.html" />
+    <Content Include="it_about.html" />
+    <Content Include="it_blog.html" />
+    <Content Include="it_blog_detail.html" />
+    <Content Include="it_blog_grid.html" />
+    <Content Include="it_career.html" />
+    <Content Include="it_cart.html" />
+    <Content Include="it_checkout.html" />
+    <Content Include="it_computer_repair.html" />
+    <Content Include="it_contact.html" />
+    <Content Include="it_contact_2.html" />
+    <Content Include="it_data_recovery.html" />
+    <Content Include="it_error.html" />
+    <Content Include="it_faq.html" />
+    <Content Include="it_home.html" />
+    <Content Include="it_home_dark.html" />
+    <Content Include="it_mobile_service.html" />
+    <Content Include="it_network_solution.html" />
+    <Content Include="it_news.html" />
+    <Content Include="it_price.html" />
+    <Content Include="it_privacy_policy.html" />
+    <Content Include="it_service.html" />
+    <Content Include="it_service_detail.html" />
+    <Content Include="it_service_list.html" />
+    <Content Include="it_shop.html" />
+    <Content Include="it_shop_detail.html" />
+    <Content Include="it_techn_support.html" />
+    <Content Include="it_term_condition.html" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\hizoom.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\menumaker.js" />
+    <Content Include="js\wow.js" />
+    <Content Include="SendReply.aspx" />
+    <Content Include="UserHome.aspx" />
+    <Content Include="UserReg.aspx" />
+    <Content Include="make_appointment.html" />
+    <Content Include="revolution\assets\coloredbg.png" />
+    <Content Include="revolution\assets\gridtile.png" />
+    <Content Include="revolution\assets\gridtile_3x3.png" />
+    <Content Include="revolution\assets\gridtile_3x3_white.png" />
+    <Content Include="revolution\assets\gridtile_white.png" />
+    <Content Include="revolution\assets\loader.gif" />
+    <Content Include="revolution\css\closedhand.cur" />
+    <Content Include="revolution\css\layers.css" />
+    <Content Include="revolution\css\navigation.css" />
+    <Content Include="revolution\css\openhand.cur" />
+    <Content Include="revolution\css\settings.css" />
+    <Content Include="revolution\fonts\revicons\revicons.svg" />
+    <Content Include="revolution\js\extensions\revolution.extension.actions.min.js" />
+    <Content Include="revolution\js\extensions\revolution.extension.carousel.min.js" />
+    <Content Include="revolution\js\extensions\revolution.extension.kenburn.min.js" />
+    <Content Include="revolution\js\extensions\revolution.extension.layeranimation.min.js" />
+    <Content Include="revolution\js\extensions\revolution.extension.migration.min.js" />
+    <Content Include="revolution\js\extensions\revolution.extension.navigation.min.js" />
+    <Content Include="revolution\js\extensions\revolution.extension.parallax.min.js" />
+    <Content Include="revolution\js\extensions\revolution.extension.slideanims.min.js" />
+    <Content Include="revolution\js\extensions\revolution.extension.video.min.js" />
+    <Content Include="revolution\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="revolution\js\jquery.themepunch.tools.min.js" />
+    <Content Include="viewallpdct.aspx" />
+    <Content Include="ViewBill.aspx" />
+    <Content Include="ViewCart.aspx" />
+    <Content Include="viewpaidpdctdetails.aspx" />
+    <Content Include="viewpdct.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Login.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdCategory.aspx.cs">
+      <DependentUpon>AdCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdCategory.aspx.designer.cs">
+      <DependentUpon>AdCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReg.aspx.cs">
+      <DependentUpon>AdminReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReg.aspx.designer.cs">
+      <DependentUpon>AdminReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdProduct.aspx.cs">
+      <DependentUpon>AdProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdProduct.aspx.designer.cs">
+      <DependentUpon>AdProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\BalanceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionClass.cs" />
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackandReply.aspx.cs">
+      <DependentUpon>FeedbackandReply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeedbackandReply.aspx.designer.cs">
+      <DependentUpon>FeedbackandReply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SendReply.aspx.cs">
+      <DependentUpon>SendReply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SendReply.aspx.designer.cs">
+      <DependentUpon>SendReply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserHome.aspx.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserHome.aspx.designer.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReg.aspx.cs">
+      <DependentUpon>UserReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReg.aspx.designer.cs">
+      <DependentUpon>UserReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewallpdct.aspx.cs">
+      <DependentUpon>viewallpdct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewallpdct.aspx.designer.cs">
+      <DependentUpon>viewallpdct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBill.aspx.cs">
+      <DependentUpon>ViewBill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewBill.aspx.designer.cs">
+      <DependentUpon>ViewBill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCart.aspx.cs">
+      <DependentUpon>ViewCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewCart.aspx.designer.cs">
+      <DependentUpon>ViewCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewpaidpdctdetails.aspx.cs">
+      <DependentUpon>viewpaidpdctdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewpaidpdctdetails.aspx.designer.cs">
+      <DependentUpon>viewpaidpdctdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewpdct.aspx.cs">
+      <DependentUpon>viewpdct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewpdct.aspx.designer.cs">
+      <DependentUpon>viewpdct.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="Connected Services\BalanceReference1\Service.wsdl" />
+    <None Include="Connected Services\BalanceReference1\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\BalanceReference1\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\BalanceReference1\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <Content Include="revolution\fonts\revicons\revicons.eot" />
+    <Content Include="revolution\fonts\revicons\revicons.ttf" />
+    <Content Include="revolution\fonts\revicons\revicons.woff" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Photocat\" />
+    <Folder Include="Photopdct\" />
+    <Folder Include="Photos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\BalanceReference1\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54443</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54443/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
